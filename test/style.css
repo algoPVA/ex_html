@@ -1,0 +1,39 @@
+/* селектор {
+    свойство:значение;
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(206, 154, 255);
+    color: aqua;
+    width: 70%;
+    /* margin: ; */
+    background-image: url("https://img2.akspic.ru/crops/1/7/6/9/6/169671/169671-graficeskij_dizajn-dizajn-arhitektura-illustracia-televideniye-1920x1080.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    color:chartreuse;
+}
+
+p {
+    font-size: 20px;
+}
+
+#dumplings {
+    border-radius: 50px;
+
+}
+
+.imgbase {
+    width: 50%;
+    display: block;
+    margin: auto;
+}
+
+#watermelon {
+    width: 50%;
+}

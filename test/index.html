@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <title>Все о пельменях!</title>
+</head>
+<body>
+    <center>
+        <a href="#el1">калькулятор</a>
+        <h1>Пельмени</h1>
+        <p>Пельме́ни (ед. ч. пельме́нь) — блюдо, распространённое в традиционной кухне народов Северной Евразии: русской, удмуртской, коми и некоторых других финно-угорских народов. Изготавливаются в виде термически обработанных изделий из пресного теста с начинкой из рубленого мяса или рыбы.</p>
+        <img id="dumplings" class="imgbase" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Pelmeni_Russian.jpg/274px-Pelmeni_Russian.jpg" alt="Здесь должны быть пельмени">
+        <img class="imgbase" src="HarryPotter.jpg" alt="Гарри">
+        <label for="#inp1">Сумма:</label>
+        <input id="inp1" type="text">
+        <button>Посчитать!</button>
+        <div id="foo"></div>
+
+
+        <div id="manual-write"></div>
+        <button py-click="write_to_page()" id="manual">Say Hello</button>
+    
+        <py-script>
+        def write_to_page():
+          manual_div = Element("manual-write")
+          manual_div.element.innerHTML = '<div><img src="https://icdn.lenta.ru/images/2021/09/10/10/20210910101351414/square_1280_webp_ba22f54be8a41ffaa9eb563450c01d98.webp" id="watermelon"></div>'
+        </py-script>
+
+
+
+        <div>
+            <input type="text" id="el1">
+            <input type="text" id="el2">
+            <button id="sum1" py-click="summ()">Посчитать!</button>
+        </div>
+        <p id="result1"></p>
+        <py-script>
+        def summ():
+            el1 = Element("el1")
+            el2 = Element("el2")
+            result1 = Element("result1")
+            el1_v = el1.element.value
+            el2_v = el2.element.value
+            result1.element.innerText = int(el1_v) + int(el2_v)
+        </py-script>
+
+        <div>
+            <input type="text" id="el3">
+            <button id="sum2" py-click="calc()">Посчитать!</button>
+        </div>
+        <p id="result2"></p>
+        <py-script>
+        def calc():
+            el3 = Element("el3")
+            result2 = Element("result2")
+            el3_v = el3.element.value
+            result2.element.innerText = eval(el3_v)
+        </py-script>
+
+
+    </center>
+ 
+</body>
+</html>
