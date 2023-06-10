@@ -8,7 +8,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     background-color: rgb(206, 154, 255);
     color: aqua;
-    width: 70%;
+
     /* margin: ; */
     background-image: url("https://img2.akspic.ru/crops/1/7/6/9/6/169671/169671-graficeskij_dizajn-dizajn-arhitektura-illustracia-televideniye-1920x1080.jpg");
     background-repeat: no-repeat;
@@ -21,6 +21,7 @@ h1 {
 
 p {
     font-size: 20px;
+
 }
 
 #dumplings {
@@ -36,4 +37,31 @@ p {
 
 #watermelon {
     width: 50%;
+}
+#sum2 {
+    background-color: white;
+    font-size: 20px;
+    font-weight: bolder;
+    border-radius: 25px;
+    color: black;
+    padding: 20px;
+    border: rgb(0, 16, 235) 5px solid;
+}
+
+#sum2:hover {
+    background-color: chartreuse;
+    box-shadow: 10px 10px 0.5 rgb(255, 255, 255);
+}
+
+#test1 {
+    display: flex;
+    width: 100%;
+}
+
+#test2 {
+    width: 60%;
+}
+
+#test3 {
+    width: 40%;
 }
