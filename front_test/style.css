@@ -1,0 +1,35 @@
+
+@font-face {
+    font-family: 'Rostelecom';
+    src: url("./Rostelecom.otf");
+}
+body {
+    font-family: 'Rostelecom', sans-serif;
+
+}
+div {
+    height: 500px;
+}
+footer {
+    position: absolute;
+    bottom: 0;
+}
+nav {
+    position: fixed;
+    top: 20px;
+}
+.calc {
+    background-color: blue;
+
+}
+
+.square {
+    background-color: #da1616;
+}
+.perimetr {
+    background-color: burlywood;
+}
+
+.even {
+    background-color: darkgoldenrod;
+}
